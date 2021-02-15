@@ -4,6 +4,8 @@ This is a ROS package. Put it in your catkin workspace and install.
 
 You will need the ROS flydra message to run the emulator. Make sure you have this installed too: https://github.com/strawlab/ros_flydra
 
+You will also need pynumdiff for the emulator to generate trajectories. `pip install pynumdiff`. 
+
 # Running it
 
 1. Emulating braid. To test things out, you can use the emulator. By default the emulator will randomly generate some trajectories that are born and die and move with some sinusoidal behavior. `rosrun braid_trigger braid_emulator.py`. You can customize your trajectories if you like, look at braid_emulator.py's main script for some hints.
